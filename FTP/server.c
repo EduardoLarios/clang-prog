@@ -10,7 +10,7 @@ void log_keeper(char *message)
 
     log_filename = route;
     strcat(log_filename, "/logs/log");
-    file = fopen(log_filename, 'a');
+    file = fopen(log_filename, "a");
 
     if (file == NULL)
     {
