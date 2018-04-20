@@ -1,0 +1,35 @@
+Thu Apr 19 20:48:24 2018	127.0.0.1	1	FTP Session Started: Welcome
+Thu Apr 19 20:49:10 2018	127.0.0.1	102	Command: 
+Thu Apr 19 20:49:10 2018	127.0.0.1	302	Response: ./root//
+Thu Apr 19 20:49:17 2018	127.0.0.1	102	Command: subdir
+Thu Apr 19 20:49:17 2018	127.0.0.1	302	Response: ./root/subdir/
+Thu Apr 19 20:49:32 2018	127.0.0.1	101	Command: subdir/something
+Thu Apr 19 20:49:32 2018	127.0.0.1	301	Response: ./root/subdir/something
+Thu Apr 19 20:49:34 2018	127.0.0.1	102	Command: 
+Thu Apr 19 20:49:35 2018	127.0.0.1	302	Response: ./root//
+Thu Apr 19 20:49:37 2018	127.0.0.1	103	Command: Clossing FTP Session
+Thu Apr 19 20:49:37 2018	127.0.0.1	103	Session Closed: Goodbye
+Thu Apr 19 20:54:35 2018	127.0.0.1	1	FTP Session Started: Welcome
+Thu Apr 19 20:55:27 2018	127.0.0.1	102	Command: 
+Thu Apr 19 20:55:27 2018	127.0.0.1	302	Response: ./root//
+Thu Apr 19 20:55:33 2018	127.0.0.1	102	Command: ..
+Thu Apr 19 20:55:33 2018	127.0.0.1	201	Response: Error: The route contains "..", which is not permitted
+Thu Apr 19 20:55:54 2018	127.0.0.1	102	Command: ..
+Thu Apr 19 20:55:54 2018	127.0.0.1	201	Response: Error: The route contains "..", which is not permitted
+Thu Apr 19 20:55:54 2018	127.0.0.1	102	Command: ..
+Thu Apr 19 20:56:45 2018	127.0.0.1	1	FTP Session Started: Welcome
+Thu Apr 19 20:57:27 2018	127.0.0.1	102	Command: 
+Thu Apr 19 20:57:27 2018	127.0.0.1	302	Response: ./root//
+Thu Apr 19 20:57:55 2018	127.0.0.1	102	Command: subdir
+Thu Apr 19 20:57:55 2018	127.0.0.1	302	Response: ./root/subdir/
+Thu Apr 19 20:58:12 2018	127.0.0.1	101	Command: subdir/something
+Thu Apr 19 20:58:12 2018	127.0.0.1	301	Response: ./root/subdir/something
+Thu Apr 19 21:00:21 2018	127.0.0.1	101	Command: 
+Thu Apr 19 21:00:21 2018	127.0.0.1	202	Response: Error: Invalid file.
+Thu Apr 19 21:00:26 2018	127.0.0.1	102	Command: 
+Thu Apr 19 21:00:26 2018	127.0.0.1	302	Response: ./root//
+Thu Apr 19 21:01:21 2018	127.0.0.1	103	Command: Clossing FTP Session
+Thu Apr 19 21:01:21 2018	127.0.0.1	103	Session Closed: Goodbye
+Thu Apr 19 21:02:47 2018	127.0.0.1	1	FTP Session Started: Welcome
+Thu Apr 19 21:02:49 2018	127.0.0.1	103	Command: 
+Thu Apr 19 21:02:49 2018	127.0.0.1	103	Session Closed: Goodbye
