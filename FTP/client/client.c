@@ -72,17 +72,20 @@ int main(int argc, char *argv[])
     server_address.sin_family = AF_INET;
     server_address.sin_addr.s_addr = inet_addr(ip_address);
     server_address.sin_port = htons(port);
+
+    // Connects to the server
+
     if (connect(sfd, (struct sockaddr *)&server_address, sizeof(server_address)) < 0)
     {
         perror(argv[0]);
         return -1;
     }
 
-    // Comunicación con servidor.
+    // Communicates with the server
 
     message = (struct message *)malloc(sizeof(struct message));
-
     printf("Conecting to FTP server...\n");
+
     do
     {
         // Reads server response

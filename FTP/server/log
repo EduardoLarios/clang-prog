@@ -33,3 +33,30 @@ Thu Apr 19 21:01:21 2018	127.0.0.1	103	Session Closed: Goodbye
 Thu Apr 19 21:02:47 2018	127.0.0.1	1	FTP Session Started: Welcome
 Thu Apr 19 21:02:49 2018	127.0.0.1	103	Command: 
 Thu Apr 19 21:02:49 2018	127.0.0.1	103	Session Closed: Goodbye
+Thu Apr 19 21:21:51 2018	127.0.0.1	1	FTP Session Started: Welcome
+Thu Apr 19 21:22:22 2018	127.0.0.1	102	Command: 
+Thu Apr 19 21:22:23 2018	127.0.0.1	302	Response: ./root//
+Thu Apr 19 21:24:06 2018	127.0.0.1	0	Command: 
+Thu Apr 19 21:24:06 2018	127.0.0.1	204	Response: Error: Unknown command.
+Thu Apr 19 21:24:33 2018	127.0.0.1	0	Command: 
+Thu Apr 19 21:24:33 2018	127.0.0.1	204	Response: Error: Unknown command.
+Thu Apr 19 21:24:55 2018	127.0.0.1	103	Command: 
+Thu Apr 19 21:24:55 2018	127.0.0.1	103	Session Closed: Goodbye
+Thu Apr 19 21:25:09 2018	127.0.0.1	1	FTP Session Started: Welcome
+Thu Apr 19 21:25:12 2018	127.0.0.1	0	Command: 
+Thu Apr 19 21:25:12 2018	127.0.0.1	204	Response: Error: Unknown command.
+Thu Apr 19 21:25:14 2018	127.0.0.1	102	Command: 
+Thu Apr 19 21:25:14 2018	127.0.0.1	302	Response: ./root//
+Thu Apr 19 21:25:19 2018	127.0.0.1	102	Command: subdir
+Thu Apr 19 21:25:19 2018	127.0.0.1	302	Response: ./root/subdir/
+Thu Apr 19 21:25:39 2018	127.0.0.1	103	Command: 
+Thu Apr 19 21:25:39 2018	127.0.0.1	103	Session Closed: Goodbye
+Mon Apr 23 20:28:13 2018	127.0.0.1	1	FTP Session Started: Welcome
+Mon Apr 23 20:28:44 2018	127.0.0.1	102	Command: 
+Mon Apr 23 20:28:44 2018	127.0.0.1	302	Response: ./root//
+Mon Apr 23 20:28:55 2018	127.0.0.1	102	Command: 
+Mon Apr 23 20:28:55 2018	127.0.0.1	302	Response: ./root//
+Mon Apr 23 20:29:09 2018	127.0.0.1	101	Command: hello
+Mon Apr 23 20:29:09 2018	127.0.0.1	301	Response: ./root/hello
+Mon Apr 23 20:29:13 2018	127.0.0.1	103	Command: 
+Mon Apr 23 20:29:13 2018	127.0.0.1	103	Session Closed: Goodbye

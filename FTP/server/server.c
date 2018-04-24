@@ -148,8 +148,10 @@ int send_file(int sfd, struct message *message, char *route, char *ip_address, i
         wait(0);
         close(fd[1]);
         dup2(fd[0], 0);
+
         int size = read(fd[0], response, sizeof(response));
         response[size] = '\0';
+
         close(fd[0]);
         if (strstr(response, "cat:") == (char *)&response)
         { 
@@ -223,47 +225,36 @@ int main(int argc, char *argv[])
     key_t key_sem;
 
     // Validates input arguments
-    if (argc > 5)
+    if (argc > 3)
     {
         printf("Usage: %s [ip_address] [port]\n", argv[0]);
         return -1;
     }
+
     if (argc == 1)
     {
         strcpy(ip_address, "127.0.0.1");
         port = 9999;
     }
+
     else if (argc == 3)
     {
-        if (strcmp(argv[1], "-d") == 0)
-        {
-            strcpy(ip_address, argv[2]);
-            port = 9999;
-        }
-        else if (strcmp(argv[1], "-p") == 0)
-        {
-            strcpy(ip_address, "127.0.0.1");
-            port = atoi(argv[2]);
-        }
-        else
+
+        port = atoi(argv[2]);
+        strcpy(ip_address, argv[3]);
+        
+        if(!argv[2] || !argv[3])
         {
             printf("Usage: %s [ip_address] [port]\n", argv[0]);
             return -1;
         }
     }
-    else if (argc == 5)
-    {
-        if (strcmp(argv[1], "-d") == 0 && strcmp(argv[3], "-p") == 0)
-        {
-            strcpy(ip_address, argv[2]);
-            port = atoi(argv[4]);
-        }
-        else
-        {
-            printf("Usage: %s [ip_address] [port]\n", argv[0]);
-            return -1;
-        }
-    }
+
+    // else if (argc != 1 || argc != 3)
+    // {
+    //     printf("Invalid number of parameters\n");
+    // }
+
     if (port <= 5000)
     {
         printf("%s: The port must be an integer bigger than 5000\n", argv[0]);
