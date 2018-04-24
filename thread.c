@@ -27,7 +27,7 @@ int main()
     // Creación del thread propiamente
     // Casteas el argumento a void pointer (void *) para poder pasarlo
     pthread_create(&tid, NULL, thread_sum, (void *)&num);
-    
+    /*  */
     // The pthread_join() function for threads is the equivalent of 
     // wait() for processes. A call to pthread_join blocks the calling 
     // thread until the thread with identifier equal to the first argument 
