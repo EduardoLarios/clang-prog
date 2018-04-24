@@ -173,7 +173,7 @@ int client_handler(int nsfd, char *ip_address, int log_fd)
     char data_sent[BUFFER_MAX], data_received[BUFFER_MAX];
     struct message msg_sent, msg_received;
 
-    // Accepts the client conenction
+    // Accepts the client connections
     if (send_message(nsfd, &msg_sent, CONECTION_START, "FTP Session Started") < 0)
     {
         perror("Error: FTP Connection");
@@ -249,11 +249,6 @@ int main(int argc, char *argv[])
             return -1;
         }
     }
-
-    // else if (argc != 1 || argc != 3)
-    // {
-    //     printf("Invalid number of parameters\n");
-    // }
 
     if (port <= 5000)
     {
