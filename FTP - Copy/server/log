@@ -80,3 +80,15 @@ Thu May 10 23:02:21 2018	127.0.0.1	0	Command:
 Thu May 10 23:02:21 2018	127.0.0.1	204	Response: Error: Unknown command.
 Thu May 10 23:02:24 2018	127.0.0.1	103	Command: 
 Thu May 10 23:02:24 2018	127.0.0.1	103	Session Closed: Goodbye
+Fri May 11 07:47:33 2018	127.0.0.1	1	FTP Session Started: Welcome
+Fri May 11 07:47:37 2018	127.0.0.1	102	Command: 
+Fri May 11 07:47:37 2018	127.0.0.1	302	Response: ./root//
+Fri May 11 07:47:46 2018	127.0.0.1	102	Command: subdir
+Fri May 11 07:47:46 2018	127.0.0.1	302	Response: ./root/subdir/
+Fri May 11 07:47:50 2018	127.0.0.1	103	Command: 
+Fri May 11 07:47:50 2018	127.0.0.1	103	Session Closed: Goodbye
+Fri May 11 07:54:39 2018	127.0.0.1	1	FTP Session Started: Welcome
+Fri May 11 07:54:47 2018	127.0.0.1	102	Command: 
+Fri May 11 07:54:47 2018	127.0.0.1	302	Response: ./root//
+Fri May 11 07:54:54 2018	127.0.0.1	103	Command: 
+Fri May 11 07:54:54 2018	127.0.0.1	103	Session Closed: Goodbye
